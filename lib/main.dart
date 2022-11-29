@@ -13,7 +13,6 @@ class Fooderlich extends StatelessWidget {
     // Importar tema
     final theme = FooderlichTheme.light();
 
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Fooderlich',

@@ -33,22 +33,54 @@ class Card1 extends StatelessWidget {
                 category,
                 style: FooderlichTheme.darkTextTheme.bodyText1,
               ),
-              Text(
-                title,
-                style: FooderlichTheme.darkTextTheme.headline5,
+              Positioned(
+                top: 20,
+                child: Text(
+                  description,
+                  style: FooderlichTheme.darkTextTheme.headline2,
+                )
               ),
-              Text(
-                description,
-                style: FooderlichTheme.darkTextTheme.bodyText1,
+              Positioned(
+                bottom: 30,
+                right: 0,
+                child: Text(
+                  description,
+                  style: FooderlichTheme.darkTextTheme.bodyText1,
+                )
               ),
-              Text(
-                chef,
-                style: FooderlichTheme.darkTextTheme.bodyText1,
-              ),
+              Positioned(
+                bottom: 10,
+                right: 0,
+                child: Text(
+                  chef,
+                  style: FooderlichTheme.darkTextTheme.bodyText1,
+                )
+              )
             ],
-          ),
+          )
         ),
       ),
     );
   }
 }
+
+// Stack(
+//  children: [
+//    Text(
+//      category,
+//      style: FooderlichTheme.darkTextTheme.bodyText1,
+//    ),
+//    Text(
+//      title,
+//      style: FooderlichTheme.darkTextTheme.headline5,
+//    ),
+//    Text(
+//      description,
+//      style: FooderlichTheme.darkTextTheme.bodyText1,
+//    ),
+//    Text(
+//      chef,
+//      style: FooderlichTheme.darkTextTheme.bodyText1,
+//    ),
+//  ],
+// ),

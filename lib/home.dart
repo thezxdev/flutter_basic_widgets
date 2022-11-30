@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fooderlich/card1.dart';
 
 class Home extends StatefulWidget {
    
@@ -10,12 +11,10 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
 
-  // TODO: Add state variable and functions
   int _selectedIndex = 0;
 
   static List<Widget> pages = [
-    // TODO: Replace with card 1
-    Container(color: Colors.red),
+    const Card1(),
     // TODO: Replace with card 2
     Container(color: Colors.green),
     // TODO: Replace with card 3
@@ -37,8 +36,9 @@ class _HomeState extends State<Home> {
           style: Theme.of(context).textTheme.headline6,
         ),
       ),
-      // TODO: Show selected tab
+      // Show selected tab
       body: pages[_selectedIndex],
+      // NavigationBar
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,

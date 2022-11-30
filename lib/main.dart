@@ -11,7 +11,7 @@ class Fooderlich extends StatelessWidget {
   Widget build(BuildContext context) {
     
     // Importar tema
-    final theme = FooderlichTheme.light();
+    final theme = FooderlichTheme.dark();
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,

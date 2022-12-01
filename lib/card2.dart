@@ -22,13 +22,37 @@ class Card2 extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(10))
         ),
         child: Column(
-          children: const [
-            AuthorCard(
+          children: [
+            const AuthorCard(
               authorName: 'Mike Katz',
               title: 'Smoothie Connoisseur',
               imageProvider: AssetImage('assets/author_katz.jpeg'),
+            ),
+            Expanded(
+              child: Stack(
+                children: [
+                  Positioned(
+                    bottom: 16,
+                    right: 16,
+                    child: Text(
+                      'Recipe',
+                      style: FooderlichTheme.lightTextTheme.headline1,
+                    )
+                  ),
+                  Positioned(
+                    bottom: 70,
+                    left: 16,
+                    child: RotatedBox(
+                      quarterTurns: 3,
+                      child: Text(
+                        'Smoothies',
+                        style: FooderlichTheme.lightTextTheme.headline1,
+                      ),
+                    )
+                  )
+                ],
+              )
             )
-            // TODO: Add positioned text
           ],
         ),
       ),

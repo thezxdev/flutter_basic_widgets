@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:fooderlich/fooderlich_theme.dart';
 
@@ -45,8 +47,81 @@ class Card3 extends StatelessWidget {
                   // const SizedBox(height: 30,)
                 ],
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: Center(
+                child: Wrap(
+                  alignment: WrapAlignment.start,
+                  spacing: 12,
+                  runSpacing: 12,
+                  children: [
+                    Chip(
+                      label: Text(
+                        'Healthy',
+                        style: FooderlichTheme.darkTextTheme.bodyText1,
+                      ),
+                      backgroundColor: Colors.black.withOpacity(.7),
+                      onDeleted: () {
+                        log('Delete');
+                      },
+                    ),
+                    Chip(
+                      label: Text(
+                        'Vegan',
+                        style: FooderlichTheme.darkTextTheme.bodyText1,
+                      ),
+                      backgroundColor: Colors.black.withOpacity(.7),
+                      onDeleted: () {
+                        log('Delete');
+                      },
+                    ),
+                    Chip(
+                      label: Text(
+                        'Carrots',
+                        style: FooderlichTheme.darkTextTheme.bodyText1,
+                      ),
+                      backgroundColor: Colors.black.withOpacity(.7),
+                    ),
+                    Chip(
+                      label: Text(
+                        'Greens',
+                        style: FooderlichTheme.darkTextTheme.bodyText1,
+                      ),
+                      backgroundColor: Colors.black.withOpacity(.7),
+                    ),
+                    Chip(
+                      label: Text(
+                        'Wheat',
+                        style: FooderlichTheme.darkTextTheme.bodyText1,
+                      ),
+                      backgroundColor: Colors.black.withOpacity(.7),
+                    ),
+                    Chip(
+                      label: Text(
+                        'Pescetarian',
+                        style: FooderlichTheme.darkTextTheme.bodyText1,
+                      ),
+                      backgroundColor: Colors.black.withOpacity(.7),
+                    ),
+                    Chip(
+                      label: Text(
+                        'Mint',
+                        style: FooderlichTheme.darkTextTheme.bodyText1,
+                      ),
+                      backgroundColor: Colors.black.withOpacity(.7),
+                    ),
+                    Chip(
+                      label: Text(
+                        'Lemongrass',
+                        style: FooderlichTheme.darkTextTheme.bodyText1,
+                      ),
+                      backgroundColor: Colors.black.withOpacity(.7),
+                    ),
+                  ],
+                ),
+              ),
             )
-            // TODO: Add Center Widget with Chip Widget children
           ],
         ),
       ),

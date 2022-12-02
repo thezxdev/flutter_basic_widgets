@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fooderlich/card1.dart';
 import 'package:fooderlich/card2.dart';
+import 'package:fooderlich/card3.dart';
 
 class Home extends StatefulWidget {
    
@@ -14,12 +15,10 @@ class _HomeState extends State<Home> {
 
   int _selectedIndex = 0;
 
-  static List<Widget> pages = [
-    const Card1(),
-    const Card2(),
-    Container(color: Colors.green),
-    // TODO: Replace with card 3
-    Container(color: Colors.blue),
+  static List<Widget> pages = const [
+    Card1(),
+    Card2(),
+    Card3(),
   ];
 
   void _onItemTapped(int index) {

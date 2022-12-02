@@ -20,7 +20,12 @@ class Card3 extends StatelessWidget {
         ),
         child: Stack(
           children: [
-            // TODO: Add dark overlay BoxDecoration
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.black.withOpacity(.6),
+                borderRadius: const BorderRadius.all(Radius.circular(15))
+              ),
+            )
             // TODO: Add Container, Column, Icon and Text
             // TODO: Add Center Widget with Chip Widget children
           ],
